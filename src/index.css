@@ -1,68 +1,63 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Asegurando que el body y html ocupen el 100% del viewport */
+html, body {
+  overflow: hidden;
+  animation: waveAnimation 12s infinite linear, colorChange 12s infinite linear; /* Añadir ambas animaciones */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+
+
+/* Asegurando que el div root también ocupe el 100% */
+#root {
+  height: 100%;
+  display: flex; /* Usar flexbox para estructurar el contenido */
+  flex-direction: column; /* Asegurando que los componentes se apilen verticalmente */
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* Estilos para el header */
+header {
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  text-align: right; /* Centrar el texto */
+  border-bottom: 3px solid #388E3C; /* Borde inferior */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Estilos para el footer */
+footer {
+  background-color: #4CAF50; /* Color de fondo del footer */
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado */
+  text-align: center; /* Centrar el texto */
+  border-top: 3px solid #388E3C; /* Borde superior */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Estilo básico para el contenido principal */
+main {
+  flex: 1; /* Permitir que el main ocupe el espacio disponible entre header y footer */
+  padding: 20px; /* Espaciado interno */
+  background-color: #ffffff; /* Fondo blanco para el contenido principal */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+nav {
+  display: flex; /* Organizar en fila */
+  justify-content: right; /* Centrar horizontalmente */
+  gap: 15px; /* Espaciado entre los botones */
 }
 
+.button {
+  background-color: #4CAF50; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor a puntero */
+  text-decoration: none; /* Sin subrayado */
+  transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.button:hover {
+  background-color: #388E3C; /* Color al pasar el mouse */
+}
