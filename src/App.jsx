@@ -9,9 +9,10 @@ function App() {
   return (
     <>
         
-          <p>Hola mundo</p>
+         <p>Hola mundo</p>
          <p>Este es mi primer proyecto</p>
          <p>Mi primer comit en git</p>
+         <p>La esquizofrenia</p>
 
        
     </>
