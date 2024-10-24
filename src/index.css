@@ -1,68 +1,138 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Asegurando que el body y html ocupen el 100% del viewport */
+html, body {
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg, 
+  #d61010,
+  #8b0000, /* Rojo oscuro para ansiedad/paranoia */
+  #3d3d3d, /* Gris para desconexión emocional */
+  #1a3d7c, /* Azul profundo para aislamiento y tristeza */
+  #3a7c1a, /* Verde vibrante para la distorsión perceptual */
+  #ffeb3b, /* Amarillo brillante para euforia o lucidez */
+  #6a0dad  /* Púrpura para misterio y confusión */
+);
+background-size: 400% 400%;
+animation: gradientAnimation 20s ease infinite;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 20% 50%; } /* Cambio más sutil en el primer cuarto */
+  50% { background-position: 100% 50%; }
+  75% { background-position: 20% 50%; } /* Cambio más sutil en el tercer cuarto */
+  100% { background-position: 0% 50%; }
 }
 
-body {
-  margin: 0;
+/* Asegurando que el div root también ocupe el 100% */
+#root {
+  height: 100%;
+  display: flex; /* Usar flexbox para estructurar el contenido */
+  flex-direction: column; /* Asegurando que los componentes se apilen verticalmente */
+}
+
+/* Estilos para el header */
+header {
+   border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(105, 28, 105, 0.5); /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    position: sticky; /* Fijo en la parte superior */
+    top: 0; /* Fijarlo en la parte superior */
+    z-index: 1000;
+    margin-bottom: 5px;
+   
+}
+
+h1{
+  margin: 2%;
+  text-align: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex; /* Organizar en fila */
+  justify-content: right; /* Centrar horizontalmente */
+  gap: 15px; /* Espaciado entre los botones */
+  flex-wrap: wrap; /* Permitir que los botones se envuelvan en varias filas */
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+nav .button,
+nav .dropdown-button {
+  padding: 10px 15px; /* Espaciado interno para los botones */
+  color: white; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color:  rgba(105, 28, 105, 0.7); /* Color de fondo */ /* Color de fondo del botón */
+  transition: background-color 0.3s; /* Transición de color */
+  cursor: pointer; /* Cambiar el cursor a puntero */
+}
+
+/* Color de fondo al pasar el mouse */
+nav .button:hover,
+nav .dropdown-button:hover {
+  background-color: #47153d; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos del menú desplegable */
+.dropdown {
+  position: relative; /* Permitir que el menú se posicione en relación a este contenedor */
+}
+
+.dropdown-menu {
+  position: absolute; /* Posición absoluta para superponerse a otros elementos */
+  background-color: rgba(105, 28, 105, 0.7);/* Color de fondo del menú */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-top: 5px; /* Espacio entre el botón y el menú */
+  z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: right;
+  flex-direction: column; /* Alinear los enlaces en columna */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.dropdown-item {
+  padding: 10px 15px; /* Espaciado interno para los elementos del menú */
+  color: white; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.dropdown-item:hover {
+  border-radius: 10px;
+  background-color: #47153d; /* Color de fondo al pasar el mouse */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Estilos responsivos */
+@media (max-width: 60px) {
+  nav {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      align-items: stretch; /* Alinear elementos para que ocupen todo el ancho */
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+  nav .button,
+  nav .dropdown-button {
+      text-align: right; /* Centrar el texto en los botones */
+      margin-bottom: 10px; /* Espaciado entre botones */
   }
 }
 
+
+/* Estilo básico para el contenido principal */
+main {
+  flex: 1; /* Permitir que el main ocupe el espacio disponible entre header y footer */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color:rgba(255, 255, 255, 0.85);  /* Fondo blanco para el contenido principal */
+  text-align: justify;
+}
+
+
+/* Estilos para el footer */
+footer {
+  border-radius: 10px; /* Bordes redondeados */
+  background-color:rgba(105, 28, 105, 0.5); /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado */
+  text-align: center; /* Centrar el texto */
+  margin-top: 5px;
+}
