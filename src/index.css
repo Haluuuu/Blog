@@ -10,9 +10,11 @@ html, body {
   #3a7c1a, /* Verde vibrante para la distorsión perceptual */
   #ffeb3b, /* Amarillo brillante para euforia o lucidez */
   #6a0dad  /* Púrpura para misterio y confusión */
+  
 );
 background-size: 400% 400%;
 animation: gradientAnimation 15s ease infinite;
+font-family: "Playfair Display", serif;
 }
 
 @keyframes gradientAnimation {
@@ -41,25 +43,40 @@ header {
     top: 0; /* Fijarlo en la parte superior */
     z-index: 1000;
     margin-bottom: 5px;
-   
+    font-family: "Playfair Display", serif;
 }
 
 h1{
   margin: 2%;
   text-align: center;
   justify-content: center;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  color:rgb(255, 255, 255)
 }
+
+h2{
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
 
 nav {
   display: flex; /* Organizar en fila */
   justify-content: right; /* Centrar horizontalmente */
   gap: 15px; /* Espaciado entre los botones */
   flex-wrap: wrap; /* Permitir que los botones se envuelvan en varias filas */
-  font-family:Georgia, 'Times New Roman', Times, serif ;
+  
+}
+
+.p{
+ font-size:larger ;
+
 }
 
 nav .button,
 nav .dropdown-button {
+  font-family: "Playfair Display", serif;
   padding: 10px 15px; /* Espaciado interno para los botones */
   color: white; /* Color del texto */
   text-decoration: none; /* Sin subrayado */
@@ -68,6 +85,8 @@ nav .dropdown-button {
   background-color:  rgba(105, 28, 105, 0.7); /* Color de fondo */ /* Color de fondo del botón */
   transition: background-color 0.3s; /* Transición de color */
   cursor: pointer; /* Cambiar el cursor a puntero */
+  font-size: large;
+  
 }
 
 /* Color de fondo al pasar el mouse */
@@ -79,6 +98,7 @@ nav .dropdown-button:hover {
 /* Estilos del menú desplegable */
 .dropdown {
   position: relative; /* Permitir que el menú se posicione en relación a este contenedor */
+
 }
 
 .dropdown-menu {
@@ -136,3 +156,26 @@ footer {
   text-align: center; /* Centrar el texto */
   margin-top: 5px;
 }
+
+
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide en dos columnas iguales */
+  gap: 20px; /* Espacio entre las columnas */
+  align-items: center; /* Alinea verticalmente las columnas */
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+}
+
+/* Ajuste en pantallas pequeñas */
+@media (max-width: 768px) {
+  .grid-contenedor {
+    grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+  }
+}
+
+.ne{  font-weight: bold;}
+
