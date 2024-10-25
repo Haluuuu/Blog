@@ -26,23 +26,27 @@ const Header = () => {
 
     return (
         <header>
-           <h1 >La Esquizofrenia un Transtorno Mental</h1>
+         
             <nav>
                 
-                <Link className="button" to="/">Home</Link>
-                <Link className="button" to="/blog">Blog</Link>
+                <Link className="button" to="/">Inicio</Link>
+                <Link className="button" to="/Sintomas">Sintomas</Link>
+                
                 <div className="dropdown" ref={dropdownRef}>
                     <button className="dropdown-button" onClick={toggleMenu}>
                         Más Opciones ≡
                     </button>
                     {isOpen && (
                         <div className="dropdown-menu">
-                            <Link className="dropdown-item" to="/about">Tratamientos</Link>
-                            <Link className="dropdown-item" to="/contact">Sintomas</Link>
+                            <Link className="dropdown-item" to="/Afectados">Afectados</Link>
+                            <Link className="dropdown-item" to="/Historia">Historia</Link>
+                            <Link className="dropdown-item" to="/Tramientos">Tratamientos</Link>
+                            <Link className="dropdown-item" to="/Acerca">Acerca de</Link>
                         </div>
                     )}
                 </div>
             </nav>
+              <h1 >LA ESQUIZOFRENIA UN TRANSTORNO MENTAL</h1>
         </header>
     );
 };
