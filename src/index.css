@@ -14,7 +14,8 @@ html, body {
 );
 background-size: 400% 400%;
 animation: gradientAnimation 15s ease infinite;
-font-family: "Playfair Display", serif;
+text-align: left;
+
 }
 
 @keyframes gradientAnimation {
@@ -43,20 +44,21 @@ header {
     top: 0; /* Fijarlo en la parte superior */
     z-index: 1000;
     margin-bottom: 5px;
-    font-family: "Playfair Display", serif;
+    
 }
 
 h1{
   margin: 2%;
   text-align: center;
   justify-content: center;
-  font-family: "Playfair Display", serif;
   color:rgb(255, 255, 255);
   font-size: 3rem;
+  margin-top: 5%;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h2{
-  font-family: "Playfair Display", serif;
+  
   font-size: 2rem;
 }
 
@@ -66,17 +68,16 @@ nav {
   justify-content: right; /* Centrar horizontalmente */
   gap: 15px; /* Espaciado entre los botones */
   flex-wrap: wrap; /* Permitir que los botones se envuelvan en varias filas */
-  
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .p{
  font-size:larger ;
-
 }
 
 nav .button,
 nav .dropdown-button {
-  font-family: "Playfair Display", serif;
+  
   padding: 10px 25px; /* Espaciado interno para los botones */
   color: white; /* Color del texto */
   text-decoration: none; /* Sin subrayado */
@@ -98,7 +99,6 @@ nav .dropdown-button:hover {
 /* Estilos del menú desplegable */
 .dropdown {
   position: relative; /* Permitir que el menú se posicione en relación a este contenedor */
-
 }
 
 .dropdown-menu {
@@ -108,6 +108,9 @@ nav .dropdown-button:hover {
   margin-top: 5px; /* Espacio entre el botón y el menú */
   z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
   display: flex;
+  width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
   justify-content: right;
   flex-direction: column; /* Alinear los enlaces en columna */
 }
@@ -116,6 +119,9 @@ nav .dropdown-button:hover {
   padding: 10px 15px; /* Espaciado interno para los elementos del menú */
   color: white; /* Color del texto */
   text-decoration: none; /* Sin subrayado */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .dropdown-item:hover {
@@ -128,32 +134,46 @@ nav .dropdown-button:hover {
   nav {
       flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
       align-items: stretch; /* Alinear elementos para que ocupen todo el ancho */
-      
   }
   h1 {
     font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  h2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   html,body{
     background-size: 250% 250%;
+    text-align: left; /* Centrar el texto en los botones */
   }
 
   main{
-    font-size: 15px;
+    font-size: 13px;
+    text-align: left; /* Centrar el texto en los botones */
   }
 
-nav .dr{
-  color: blue;
+  nav .dropdown-item{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  nav .dropdown-button 
+{
+  width: 100%; 
+  padding: 15px 20px;
 }
   
+nav .button,nav .dropdown-button:hover
+nav .dropdown-button, nav.dropdown-item:hover, nav .dropdown-button {
+    text-align: center; /* Centrar el texto en los botones */
+    margin-bottom: 0.1; /* Espaciado entre botones */
+    font-size: 15px;
+    justify-content: center;
+}
 
-  nav .button,nav .dropdown-button:hover
-  nav .dropdown-button, nav.dropdown-item:hover {
-      text-align: center; /* Centrar el texto en los botones */
-      margin-bottom: 10px; /* Espaciado entre botones */
-      font-size: 15px;
-      
-  }
 }
 
 
@@ -163,7 +183,9 @@ main {
   padding: 40px; /* Espaciado interno */
   border-radius: 5px; /* Bordes redondeados */
   background-color:rgba(255, 255, 255, 0.85);  /* Fondo blanco para el contenido principal */
-  text-align: justify;
+  text-align: left; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 
 
@@ -175,6 +197,8 @@ footer {
   padding: 20px; /* Espaciado */
   text-align: center; /* Centrar el texto */
   margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
 }
 
 

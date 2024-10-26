@@ -25,13 +25,11 @@ const Home = () => {
          <p className="p">
          A pesar de las dificultades, muchas personas con esquizofrenia pueden llevar vidas satisfactorias con el tratamiento y el apoyo adecuado. La calidad de vida varía según factores como el acceso a atención médica, el apoyo social y el entorno familiar. La inclusión en la comunidad y la promoción de la integración laboral y educativa son importantes para mejorar la autonomía de las personas afectadas.
          </p>
-        
-        <p className="p">
-        El trastorno no solo afecta a quien lo padece, sino también a sus familiares y cuidadores. Las familias a menudo enfrentan desafíos emocionales, financieros y sociales, lo que hace que el apoyo a los cuidadores sea esencial. En muchos casos, las familias participan activamente en el cuidado y manejo del tratamiento del paciente, por lo que también necesitan acceso a información y recursos.
-        </p>
-
         </div>
       </div>
+      <p className="p">
+        El trastorno no solo afecta a quien lo padece, sino también a sus familiares y cuidadores. Las familias a menudo enfrentan desafíos emocionales, financieros y sociales, lo que hace que el apoyo a los cuidadores sea esencial. En muchos casos, las familias participan activamente en el cuidado y manejo del tratamiento del paciente, por lo que también necesitan acceso a información y recursos.
+        </p>
       </div>
   );
 };
