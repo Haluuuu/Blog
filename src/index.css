@@ -87,18 +87,21 @@ nav .dropdown-button {
   transition: background-color 0.3s; /* Transición de color */
   cursor: pointer; /* Cambiar el cursor a puntero */
   font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
 
 /* Color de fondo al pasar el mouse */
 nav .button:hover,
 nav .dropdown-button:hover {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: #47153d; /* Color de fondo al pasar el mouse */
 }
 
 /* Estilos del menú desplegable */
 .dropdown {
   position: relative; /* Permitir que el menú se posicione en relación a este contenedor */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .dropdown-menu {
