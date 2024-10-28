@@ -1,4 +1,6 @@
 import React from "react";
+import VideoComponent from './video';
+
 
 const Sintomas = () => {
   return (
@@ -68,6 +70,14 @@ const Sintomas = () => {
         </div>
     </div>
     <br></br>
+
+    <h2>Simulacion de los sintomas de la Esquizofrénia</h2>
+    <VideoComponent/>
+
+    <br>
+    </br>
+    <br>
+    </br>
     <br></br>
     <h3>Síntomas negativos</h3>
 
@@ -97,6 +107,8 @@ const Sintomas = () => {
       </li>
     </ul>
 <br></br>
+<br>
+</br>
 
     <h3>Desorganización</h3>
     <p className="p">
@@ -107,35 +119,49 @@ const Sintomas = () => {
           <div class="imagen">
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/%D0%A1atatonic_stupor3.jpg" />
           <p className="p">
-          <b>El trastorno del pensamiento</b> se refiere a la desorganización del pensamiento, que se manifiesta a través de la incoherencia del lenguaje o de cambios constantes de un tema a otro. El lenguaje puede ser levemente desorganizado o totalmente incoherente e incomprensible.
+        <b>El comportamiento extravagante</b> puede adoptar la forma de tonterías infantiloides, agitación o bien aspecto, higiene o conductas inapropiados. La catatonia es una forma extrema de comportamiento extravagante en la que la persona mantiene una postura rígida y resiste la fuerza ejercida por otros para ser movida o, por el contrario, se mueve repentinamente de manera aleatoria.
       </p>
+
+          <p className="pb">
+            Lorem ipsum dolor sit amet, consectetur asdasfgadsfafsasfasfsfasfasfasfasfasf adipisicing elit. In culpa nemo provident vel repudiandae vero, mollitia eius consectetur, rem a, similique molestiae officiis hic natus aspernatur laudantium quidem? Quasi, numquam.
+          </p>
           </div>
         <div class="contenido">
     
-        <p className="p">
-        <b>El comportamiento extravagante</b> puede adoptar la forma de tonterías infantiloides, agitación o bien aspecto, higiene o conductas inapropiados. La catatonia es una forma extrema de comportamiento extravagante en la que la persona mantiene una postura rígida y resiste la fuerza ejercida por otros para ser movida o, por el contrario, se mueve repentinamente de manera aleatoria.
-      </p>
+     
+      <p className="p">
+          <b>El trastorno del pensamiento</b> se refiere a la desorganización del pensamiento, que se manifiesta a través de la incoherencia del lenguaje o de cambios constantes de un tema a otro. El lenguaje puede ser levemente desorganizado o totalmente incoherente e incomprensible.
+          </p>
           <div className="imagen">
           <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/43dcc204-85fc-4bfd-9687-580d9afdd517/dcl092e-c55257ae-b9e8-40ee-9b1a-584ed6bddc77.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQzZGNjMjA0LTg1ZmMtNGJmZC05Njg3LTU4MGQ5YWZkZDUxN1wvZGNsMDkyZS1jNTUyNTdhZS1iOWU4LTQwZWUtOWIxYS01ODRlZDZiZGRjNzcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.20XKJcDNE5N_T-xHLON1Siaq8eL9Huea-A_7mP4soBg" />
         </div>
 
         </div>
       </div>
-
+      <br>
+      </br>
+      <br>
+      </br>
       <br>
       </br>
       <h3>Deterioro cognitivo</h3>
       <p className="p">
       El deterioro cognitivo se refiere a la dificultad para concentrarse, recordar, organizar, planificar y resolver problemas. Algunas personas son incapaces de concentrarse suficientemente para poder leer, seguir el hilo de una película o de un programa de televisión, o seguir instrucciones. Otras son incapaces de ignorar distracciones o de permanecer centradas en una tarea. Por lo tanto, las tareas que implican atención a los detalles, desarrollo de procedimientos complicados, toma de decisiones y comprensión de interacciones sociales pueden ser imposibles de llevar a cabo
       </p>
-    
+      <br>
+      </br>
+      <br>
+      </br>
 
       <h3>Violencia</h3>
       <p className="p">
       Contrariamente a la opinión popular, las personas con esquizofrenia presentan solamente un ligero aumento del riesgo de comportamiento violento. Las amenazas violentas y los arrebatos agresivos menores son mucho más frecuentes que los comportamientos gravemente peligrosos. En muy pocos casos, personas gravemente deprimidas, aisladas o paranoicas atacan o asesinan a quienes perciben como la única fuente de sus dificultades (por ejemplo, una autoridad, una celebridad o su propio cónyuge).
       </p>
 
-
+      <br>
+      </br>
+      <br>
+      </br>
 
 
 
@@ -161,3 +187,5 @@ const Sintomas = () => {
 };
 
 export default Sintomas;
+
+

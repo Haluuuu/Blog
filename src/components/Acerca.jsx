@@ -58,7 +58,7 @@ const Acerca = () => {
       <p className="p">
       Agredesco a los recursos visuales ocupados, y a todos los creadores de ellos.
       </p>
-
+      
       <p className="p">
           <b>Contacto</b>
       </p>
