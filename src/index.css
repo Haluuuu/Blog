@@ -75,6 +75,11 @@ nav {
  font-size:larger ;
 }
 
+.pb{
+  font-size:larger ;
+  color: transparent;
+}
+
 nav .button,
 nav .dropdown-button {
   
@@ -217,7 +222,7 @@ footer {
 }
 
 /* Ajuste en pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
   .grid-contenedor {
     grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
   }

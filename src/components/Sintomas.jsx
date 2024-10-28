@@ -107,14 +107,19 @@ const Sintomas = () => {
           <div class="imagen">
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/%D0%A1atatonic_stupor3.jpg" />
           <p className="p">
-          <b>El trastorno del pensamiento</b> se refiere a la desorganización del pensamiento, que se manifiesta a través de la incoherencia del lenguaje o de cambios constantes de un tema a otro. El lenguaje puede ser levemente desorganizado o totalmente incoherente e incomprensible.
+        <b>El comportamiento extravagante</b> puede adoptar la forma de tonterías infantiloides, agitación o bien aspecto, higiene o conductas inapropiados. La catatonia es una forma extrema de comportamiento extravagante en la que la persona mantiene una postura rígida y resiste la fuerza ejercida por otros para ser movida o, por el contrario, se mueve repentinamente de manera aleatoria.
       </p>
+
+          <p className="pb">
+            Lorem ipsum dolor sit amet, consectetur asdasfgadsfafsasfasfsfasfasfasfasfasf adipisicing elit. In culpa nemo provident vel repudiandae vero, mollitia eius consectetur, rem a, similique molestiae officiis hic natus aspernatur laudantium quidem? Quasi, numquam.
+          </p>
           </div>
         <div class="contenido">
     
-        <p className="p">
-        <b>El comportamiento extravagante</b> puede adoptar la forma de tonterías infantiloides, agitación o bien aspecto, higiene o conductas inapropiados. La catatonia es una forma extrema de comportamiento extravagante en la que la persona mantiene una postura rígida y resiste la fuerza ejercida por otros para ser movida o, por el contrario, se mueve repentinamente de manera aleatoria.
-      </p>
+     
+      <p className="p">
+          <b>El trastorno del pensamiento</b> se refiere a la desorganización del pensamiento, que se manifiesta a través de la incoherencia del lenguaje o de cambios constantes de un tema a otro. El lenguaje puede ser levemente desorganizado o totalmente incoherente e incomprensible.
+          </p>
           <div className="imagen">
           <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/43dcc204-85fc-4bfd-9687-580d9afdd517/dcl092e-c55257ae-b9e8-40ee-9b1a-584ed6bddc77.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQzZGNjMjA0LTg1ZmMtNGJmZC05Njg3LTU4MGQ5YWZkZDUxN1wvZGNsMDkyZS1jNTUyNTdhZS1iOWU4LTQwZWUtOWIxYS01ODRlZDZiZGRjNzcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.20XKJcDNE5N_T-xHLON1Siaq8eL9Huea-A_7mP4soBg" />
         </div>
