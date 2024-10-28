@@ -65,13 +65,14 @@ const Sintomas = () => {
       <b>Los delirios</b> son falsas creencias que persisten a pesar de pruebas en su contra. En la esquizofrenia, los delirios pueden incluir persecución, donde las personas creen que son vigiladas o engañadas, o delirios de referencia, pensando que mensajes de libros o canciones les están dirigidos. También pueden tener delirios de robo de pensamientos, creyendo que otros pueden leer sus mentes o que fuerzas externas controlan sus pensamientos. Los delirios pueden ser extraños (inverosímiles, como creer que les han extraído órganos sin cicatriz) o no extraños (como ser engañado o perseguido).
       </p>
           <div className="imagen">
-          <img src="https://www.saudedica.com.br/wp-content/uploads/2017/07/del%C3%ADrio-2.jpg" />
+          <img src="https://thumbs.dreamstime.com/b/person-schizophrenia-surrounded-their-own-hallucinations-delusions-person-schizophrenia-surrounded-their-274123197.jpg" />
       </div>
         </div>
     </div>
     <br></br>
 
     <h2>Simulacion de los sintomas de la Esquizofrénia</h2>
+    <br></br>
     <VideoComponent/>
 
     <br>
