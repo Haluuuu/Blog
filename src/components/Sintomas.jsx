@@ -1,4 +1,6 @@
 import React from "react";
+import VideoComponent from './video';
+
 
 const Sintomas = () => {
   return (
@@ -68,6 +70,14 @@ const Sintomas = () => {
         </div>
     </div>
     <br></br>
+
+    <h2>Simulacion de los sintomas de la Esquizofrénia</h2>
+    <VideoComponent/>
+
+    <br>
+    </br>
+    <br>
+    </br>
     <br></br>
     <h3>Síntomas negativos</h3>
 
@@ -97,6 +107,8 @@ const Sintomas = () => {
       </li>
     </ul>
 <br></br>
+<br>
+</br>
 
     <h3>Desorganización</h3>
     <p className="p">
@@ -126,21 +138,30 @@ const Sintomas = () => {
 
         </div>
       </div>
-
+      <br>
+      </br>
+      <br>
+      </br>
       <br>
       </br>
       <h3>Deterioro cognitivo</h3>
       <p className="p">
       El deterioro cognitivo se refiere a la dificultad para concentrarse, recordar, organizar, planificar y resolver problemas. Algunas personas son incapaces de concentrarse suficientemente para poder leer, seguir el hilo de una película o de un programa de televisión, o seguir instrucciones. Otras son incapaces de ignorar distracciones o de permanecer centradas en una tarea. Por lo tanto, las tareas que implican atención a los detalles, desarrollo de procedimientos complicados, toma de decisiones y comprensión de interacciones sociales pueden ser imposibles de llevar a cabo
       </p>
-    
+      <br>
+      </br>
+      <br>
+      </br>
 
       <h3>Violencia</h3>
       <p className="p">
       Contrariamente a la opinión popular, las personas con esquizofrenia presentan solamente un ligero aumento del riesgo de comportamiento violento. Las amenazas violentas y los arrebatos agresivos menores son mucho más frecuentes que los comportamientos gravemente peligrosos. En muy pocos casos, personas gravemente deprimidas, aisladas o paranoicas atacan o asesinan a quienes perciben como la única fuente de sus dificultades (por ejemplo, una autoridad, una celebridad o su propio cónyuge).
       </p>
 
-
+      <br>
+      </br>
+      <br>
+      </br>
 
 
 
@@ -166,3 +187,5 @@ const Sintomas = () => {
 };
 
 export default Sintomas;
+
+
