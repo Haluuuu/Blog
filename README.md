@@ -1,7 +1,5 @@
 # Blog de la Esquizofrenia - Un Trastorno Mental
 
-## 📢 Bienvenidos
-
 ¡Hola y bienvenidos al **Blog de la Esquizofrenia - Un Trastorno Mental**! 
 
 Este blog fue creado con el propósito de informar y concientizar más sobre esta enfermedad mental.
@@ -94,24 +92,3 @@ npm run preview
 ```
 
 ---
-
-## 🙌 Créditos
-
-Quiero agradecer a todas las personas y recursos que han contribuido a este blog. En especial, agradezco a:
-
-🌍 **Fuentes de información:**
-- [Iwofr.org](https://www.iwofr.org/)
-- [Mayoclinic.org](https://www.mayoclinic.org/)
-- [Msdmanuals](https://www.msdmanuals.com/)
-
-🖼️ **Recursos visuales:** Agradezco a los creadores de imágenes y gráficos utilizados en este blog.
-
----
-
-## 📩 Contacto
-
-📧 **Correo Electrónico:** Hrldrmnd@gmail.com  
-📂 **Repositorio GitHub:** [Blog en GitHub](https://github.com/Haluuuu/Blog.git)
-
-¡Gracias por visitar el Blog! Espero que disfrutes leyendo tanto como yo disfruté creándolo. 😊
-
